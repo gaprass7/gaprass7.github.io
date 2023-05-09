@@ -14,6 +14,11 @@
   text-decoration: none;
 }
 
+html {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -152,7 +157,7 @@ body {
   cursor: pointer;
 }
 
-/* About */
+/* About Sesions Stylesheet */
 .about,
 .service,
 .producs,
@@ -177,29 +182,35 @@ body {
   color: var(--warna);
 }
 
-.about .row {
+.about .row{
   display: flex;
+  margin-top: 2rem;
+  background-color: #dbeaf1;
 }
 
 .row .about-img {
   flex: 1 1 45rem;
+  object-fit: cover;
 }
 
 .row .about-img img{
   width: 100%;
+  height: 100%
 }
 
 .row .content {
   flex: 1 1 35rem;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
+  /* border: 3px solid var(--primary); */
 }
 
 .row .content h3{
   font-size: 2rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.4rem;
 }
 
 .row .content p{
+  width: 100%;
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.6;
@@ -207,7 +218,7 @@ body {
 }
 
 
-/* services */
+/* services Session Stylesheet */
 .service,
 .contact {
   background-color: var(--bgg);
@@ -219,12 +230,14 @@ body {
 }
 
 .service h2,
-.contact h2{
+.contact h2,
+.producs h2 {
   margin-bottom: 1rem;
 }
 
 .service p,
-.contact p {
+.contact p,
+.producs p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -274,6 +287,56 @@ body {
     var(--bgg) 100%
   );
 }
+
+.producs .row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.producs .product-content {
+  text-align: center;
+  padding: 0rem 0rem 2rem;
+  background-color:  #dbeaf1;
+  box-shadow: 2px 4px 4px #979797;
+}
+
+.producs .product-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.producs .product-icons a {
+  padding: 0.6rem 2rem;
+  color: black;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producs .product-icons a:hover {
+  color: white;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);  
+}
+
+.producs .product-image {
+  padding: 0 0 1rem;
+}
+
+.producs .product-image img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 
 
@@ -388,7 +451,8 @@ body {
   }
 
   .row .content {
-    padding: 0;
+    padding: 0 2rem 4rem;
+    /* padding: 4rem 2rem; */
   }
 
   .row .content h3 {
