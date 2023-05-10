@@ -145,7 +145,8 @@ body {
 }
 
 .content .button,
-.contact .button {
+.contact .button,
+.producs .button {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -236,8 +237,7 @@ body {
 }
 
 .service p,
-.contact p,
-.producs p {
+.contact p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -288,11 +288,28 @@ body {
   );
 }
 
+.producs .head-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.producs p {
+  max-width: 50rem;
+  margin: auto;
+  font-size: 1.12rem;
+  font-weight: 450;
+  line-height: 1.6;
+}
+
 .producs .row{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   margin-top: 4rem;
+  /* background-color: #666;
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 15px; */
 }
 
 .producs .product-content {
@@ -309,10 +326,12 @@ body {
 }
 
 .producs .product-icons a {
+  font-size: 1.12rem;
   padding: 0.6rem 2rem;
   color: black;
   margin: 0.3rem;
   border: 1px solid #666;
+  border-radius: 7px;
   
 
   display: flex;
@@ -337,7 +356,33 @@ body {
   object-position: center;
 }
 
+.producs .row .product-ket h3 {
+  font-size: 1.6rem;
+}
 
+.producs .row .product-stars {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  color: var(--primary);
+}
+
+.producs .row .star-color {
+  fill: var(--primary);
+  
+}
+
+.producs .row .product-harga {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.producs .row .product-harga span {
+  /* text-decoration: line-through;
+  font-weight: lighter; */
+  font-weight: 300;
+  color: #666;
+  font-size: 1rem;
+}
 
 
 /* Contact Sesions Stylesheet */

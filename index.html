@@ -17,6 +17,47 @@
     <!-- Feather Icons CDN -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Swipper Js  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -120,88 +161,191 @@
     <!-- Producs Section Start -->
     <section class="producs" id="producs">
       <h2><span>Produk</span> Kami</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, maxime.</p>
+      <div class="head-product">
+        <div class="text">
+          <h3>TOp SelleR A renT</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Blanditiis maxime.</p>
+        </div>
+        <div class="btn">
+          <a href="/productfull.html" class="btn">x</a>
+        </div>
+      </div>
 
       <div class="row">
-        <div class="product-content">
-          <div class="product-image">
-            <img src="images/producs/car-1.jpg" alt="">
-          </div>
-          <div class="product-ket">
-            <h3>Mobil Sport Cart</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-1.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 1.000.000<span> / Day</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i>&nbsp; Book Now</a>
+                  <a href="" class="button"><i data-feather="eye"></i>&nbsp; Detai</a>
+                </div>
+              </div>
             </div>
-            <div class="product-harga">Rp. 999.999.000<span> Rp. 1.299.999.000</span></div>
-          </div>
-          <div class="product-icons">
-            <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
-            <a href=""><i data-feather="eye"></i> Detai</a>
-          </div>
-        </div>
-        <div class="product-content">
-          <div class="product-image">
-            <img src="images/producs/car-7.jpg" alt="">
-          </div>
-          <div class="product-ket">
-            <h3>Mobil Sport Cart</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-7.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i>&nbsp; Book Now</a>
+                  <a href=""><i data-feather="eye"></i>&nbsp; Detai</a>
+                </div>
+              </div>
             </div>
-            <div class="product-harga">Rp. 999.999.000<span> Rp. 1.299.999.000</span></div>
-          </div>
-          <div class="product-icons">
-            <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
-            <a href=""><i data-feather="eye"></i> Detai</a>
-          </div>
-        </div>
-        <div class="product-content">
-          <div class="product-image">
-            <img src="images/producs/car-8.jpg" alt="">
-          </div>
-          <div class="product-ket">
-            <h3>Mobil Sport Cart</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-8.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i class="star-color" data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
+                  <a href=""><i data-feather="eye"></i>&nbsp; Detail</a>
+                </div>
+              </div>
             </div>
-            <div class="product-harga">Rp. 999.999.000<span> Rp. 1.299.999.000</span></div>
-          </div>
-          <div class="product-icons">
-            <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
-            <a href=""><i data-feather="eye"></i> Detai</a>
-          </div>
-        </div>
-        <div class="product-content">
-          <div class="product-image">
-            <img src="images/producs/car-10.jpg" alt="">
-          </div>
-          <div class="product-ket">
-            <h3>Mobil Sport Cart</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-10.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
+                  <a href=""><i data-feather="eye"></i> Detai</a>
+                </div>
+              </div>
             </div>
-            <div class="product-harga">Rp. 999.999.000<span> Rp. 1.299.999.000</span></div>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-9.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
+                  <a href=""><i data-feather="eye"></i> Detai</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-8.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
+                  <a href=""><i data-feather="eye"></i> Detai</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-content">
+                <div class="product-image">
+                  <img src="images/producs/car-5.jpg" alt="" />
+                </div>
+                <div class="product-ket">
+                  <h3>Mobil Sport Cart</h3>
+                  <div class="product-stars">
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="product-harga">
+                    Rp. 999.999.000<span> Rp. 1.299.999.000</span>
+                  </div>
+                </div>
+                <div class="product-icons">
+                  <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
+                  <a href=""><i data-feather="eye"></i> Detai</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="product-icons">
-            <a href=""><i data-feather="shopping-cart"></i> Book Now</a>
-            <a href=""><i data-feather="eye"></i> Detai</a>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -248,11 +392,38 @@
       </div>
     </section>
 
+    <section>
+    
+    </section>
+
 
     <!-- Feather Icons  -->
     <script>
       feather.replace();
     </script>
+
+    <!-- Swipper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
+     <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: false,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
     <!-- Javascript -->
     <script src="js/javascript.js"></script>
